@@ -1,0 +1,34 @@
+{
+  "name": "react-verification-code-ts-hook",
+  "version": "0.0.1",
+  "description": "First class TypeScript React Hook based verification code component.",
+  "keywords": [],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@types/react": "16.8.13",
+    "@types/react-dom": "16.8.3",
+    "emotion": "10.0.9",
+    "immer": "2.1.5",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-scripts": "2.1.8",
+    "typescript": "3.3.4000"
+  },
+  "devDependencies": {
+    "@types/react": "16.8.8",
+    "@types/react-dom": "16.8.2",
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
