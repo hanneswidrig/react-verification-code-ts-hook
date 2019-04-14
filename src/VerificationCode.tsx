@@ -3,7 +3,7 @@ import { produce } from 'immer'
 import { KEY_CODE } from './keyCode'
 import { Container } from './Container'
 import { InputField } from './InputField'
-import { getRegExp, getIndexes } from './utils'
+import { validChar, getIndexes } from './utils'
 import {
 	IVerificationFieldProps,
 	FieldValues,
@@ -66,9 +66,6 @@ export const VerificationCode = (props: IVerificationFieldProps) => {
 				break
 		}
 	}
-
-	const validChar = (v: string, t: ValidType) =>
-		v.match(getRegExp(t)) !== null ? v.match(getRegExp(t))!.join() : ''
 
 	const onChange = (
 		index: number,

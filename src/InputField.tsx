@@ -41,6 +41,7 @@ export const InputField = ({
 			autoFocus={autoFocus}
 			data-id={`${index}`}
 			onChange={onChange}
+			onKeyDown={onKeyDown}
 			onPaste={e => {
 				e.preventDefault()
 				if (onPaste) {
