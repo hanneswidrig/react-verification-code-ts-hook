@@ -126,13 +126,13 @@ export const VerificationCode = (props: IVerificationFieldProps) => {
 		if (autoFocus) {
 			inputElements[0]!.select()
 		}
-	}, [])
+	}, [autoFocus])
 
 	React.useEffect(() => {
 		if (props.checkValidity) {
 			props.checkValidity(values.join(''))
 		}
-	}, [values])
+	}, [props, values])
 
 	return (
 		<Container>
