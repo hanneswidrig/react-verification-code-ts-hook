@@ -1,4 +1,4 @@
 import * as React from 'react'
-import { VerificationCode } from './VerificationCode'
+import { Wrapper } from './Wrapper'
 
-export const App = () => <VerificationCode />
+export const App = () => <Wrapper />
