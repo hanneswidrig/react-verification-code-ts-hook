@@ -2,7 +2,7 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
-import { App } from './App'
+import { Wrapper } from './Wrapper'
 
 if (!Array.prototype.fill) {
   Object.defineProperty(Array.prototype, 'fill', {
@@ -36,4 +36,4 @@ if (!Array.prototype.fill) {
   })
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<Wrapper />, document.getElementById('root'))
