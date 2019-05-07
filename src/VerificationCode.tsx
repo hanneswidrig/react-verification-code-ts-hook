@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { produce } from 'immer'
-import { KEY_CODE } from './keyCode'
 import { InputField } from './InputField'
 import { validChar, getIndexes } from './utils'
 import { IVerificationFieldProps, FieldValues, InputElements, ValidType, ChangeType, KeyType, PasteType } from './types'
@@ -17,7 +16,13 @@ export const VerificationCode = (props: IVerificationFieldProps) => {
 
   const handleNavigation = (currentIndex: number, elements: InputElements, e: KeyType) => {
     const { firstElement, lastElement, prevIndex, nextIndex } = getIndexes(currentIndex, elements.length)
-
+    const KEY_CODE = {
+      backspace: 8,
+      left: 37,
+      up: 38,
+      right: 39,
+      down: 40,
+    }
     switch (e.keyCode) {
       case KEY_CODE.backspace:
         e.preventDefault()
